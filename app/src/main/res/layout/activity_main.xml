@@ -20,20 +20,32 @@
         android:id="@+id/tv_sesi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama Anda"
+        android:text="Jabatan"
         android:textSize="30sp"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_selamat" />
-    <Button
-        android:id="@+id/btn_logout"
+    <TextView
+        android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sesi" />
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="LOGOUT"
+        android:layout_marginHorizontal="40dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_sesi"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_name"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
